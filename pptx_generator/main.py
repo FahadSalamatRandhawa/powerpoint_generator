@@ -1,6 +1,6 @@
 from pptx import Presentation
 from pptx.util import Inches
-import comtypes.client
+# import comtypes.client
 
 def create_ppt(slides_data, ppt_filename):
     prs = Presentation()
@@ -17,7 +17,7 @@ def create_ppt(slides_data, ppt_filename):
 
     prs.save(ppt_filename)
 
-def convert_ppt_to_pdf(ppt_filename, pdf_filename):
+# def convert_ppt_to_pdf(ppt_filename, pdf_filename):
     import pypandoc
     pypandoc.download_pandoc()
     output = pypandoc.convert_file(ppt_filename, 'pdf', outputfile=pdf_filename)
