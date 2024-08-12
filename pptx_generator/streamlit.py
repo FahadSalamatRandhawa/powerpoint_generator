@@ -1,4 +1,4 @@
-from main import convert_ppt_to_pdf, create_ppt
+from main import create_ppt
 
 import streamlit as st
 from pptx import Presentation
